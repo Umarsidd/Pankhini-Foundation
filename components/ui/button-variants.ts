@@ -7,7 +7,7 @@ export const buttonVariants = cva(
       variant: {
         primary: 'bg-[var(--plum)] text-white shadow-[0_10px_24px_rgba(105,53,101,0.18)] hover:-translate-y-0.5 hover:bg-[var(--plum-deep)] hover:shadow-[0_14px_30px_rgba(105,53,101,0.25)]',
         secondary: 'border border-[var(--line-strong)] bg-white/80 text-[var(--ink)] hover:-translate-y-0.5 hover:border-[var(--plum)] hover:bg-[var(--blush)]',
-        dark: 'bg-[var(--ink)] text-white shadow-[0_10px_24px_rgba(28,24,31,0.15)] hover:-translate-y-0.5 hover:bg-[#302733]',
+        dark: 'bg-[var(--sand)] text-[var(--ink)] border border-[var(--line-strong)] shadow-[0_10px_24px_rgba(28,24,31,0.08)] hover:-translate-y-0.5 hover:bg-[#f1dfbf]',
         ghost: 'text-[var(--ink-soft)] hover:bg-[var(--blush)] hover:text-[var(--plum)]',
         saffron: 'bg-[var(--saffron)] text-white shadow-[0_10px_24px_rgba(224,149,60,0.2)] hover:-translate-y-0.5 hover:bg-[#eaa25a]',
       },
