@@ -50,7 +50,7 @@ export function Navbar() {
       </div>
 
       {open && (
-        <motion.div initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} className="fixed inset-0 top-[4.5rem] z-40 bg-[var(--paper)] px-6 py-8 lg:hidden">
+        <motion.div initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} className="fixed inset-0 top-[4.5rem] z-40 overflow-y-auto bg-[radial-gradient(circle_at_top,_rgba(242,231,240,0.9),_rgba(253,250,246,1)_56%)] px-6 py-8 shadow-[0_12px_30px_rgba(32,27,33,0.08)] lg:hidden">
           <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
             {siteData.nav.map((item, index) => (
               <motion.a key={item.href} href={item.href} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: index * 0.05 }} className="border-b border-[var(--line)] py-4 font-serif text-3xl tracking-[-0.04em] text-[var(--ink)]" onClick={() => setOpen(false)}>
