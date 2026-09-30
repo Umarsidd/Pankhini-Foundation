@@ -1,0 +1,14 @@
+import { Mail, MapPin, MessageCircle, ArrowUpRight } from 'lucide-react'
+import { siteData } from '@/lib/site-data'
+import { buttonVariants } from '@/components/ui/button-variants'
+
+export function ContactSection() {
+  return (
+    <section id="contact" className="border-t border-[var(--line)] bg-white py-20 sm:py-28">
+      <div className="section-shell grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
+        <div><div className="eyebrow"><span className="eyebrow-dot" />Start a conversation</div><h2 className="section-title mt-5">Let’s build a more <em>equitable future.</em></h2><p className="mt-6 max-w-md text-base leading-8 text-[var(--ink-soft)]">Pankhini is seeking co-founders, fellows, CSR partners, and implementation allies for its June 2026 launch. Tell us how you would like to be part of the change.</p><div className="mt-8 flex flex-wrap gap-3"><a href={`mailto:${siteData.email}`} className={buttonVariants({ variant: 'primary' })}>Write to us <ArrowUpRight /></a><a href={siteData.whatsappHref} target="_blank" rel="noreferrer" className={buttonVariants({ variant: 'secondary' })}>WhatsApp <MessageCircle /></a></div></div>
+        <div className="grid gap-3 sm:grid-cols-2"><a href={`mailto:${siteData.email}`} className="group rounded-2xl border border-[var(--line)] bg-[var(--paper)] p-6 transition hover:-translate-y-1 hover:border-[var(--plum)]"><div className="flex size-10 items-center justify-center rounded-xl bg-[var(--blush)] text-[var(--plum)]"><Mail className="size-5" /></div><div className="mt-6 text-[0.65rem] font-bold uppercase tracking-[0.16em] text-[var(--muted)]">Write to us</div><div className="mt-2 break-words font-serif text-lg tracking-[-0.03em] text-[var(--ink)]">{siteData.email}</div></a><a href={siteData.whatsappHref} target="_blank" rel="noreferrer" className="group rounded-2xl border border-[var(--line)] bg-[var(--paper)] p-6 transition hover:-translate-y-1 hover:border-[var(--plum)]"><div className="flex size-10 items-center justify-center rounded-xl bg-[var(--blush)] text-[var(--plum)]"><MessageCircle className="size-5" /></div><div className="mt-6 text-[0.65rem] font-bold uppercase tracking-[0.16em] text-[var(--muted)]">WhatsApp</div><div className="mt-2 font-serif text-lg tracking-[-0.03em] text-[var(--ink)]">{siteData.whatsappNumber}</div></a><div className="rounded-2xl border border-[var(--line)] bg-[var(--paper)] p-6 sm:col-span-2"><div className="flex size-10 items-center justify-center rounded-xl bg-[var(--sand)] text-[#a96518]"><MapPin className="size-5" /></div><div className="mt-6 text-[0.65rem] font-bold uppercase tracking-[0.16em] text-[var(--muted)]">Based in</div><div className="mt-2 font-serif text-lg tracking-[-0.03em] text-[var(--ink)]">{siteData.location}</div></div></div>
+      </div>
+    </section>
+  )
+}
