@@ -9,7 +9,7 @@ export const buttonVariants = cva(
         secondary: 'border border-[var(--line-strong)] bg-white/80 text-[var(--ink)] hover:-translate-y-0.5 hover:border-[var(--plum)] hover:bg-[var(--blush)]',
         dark: 'bg-[var(--ink)] text-white shadow-[0_10px_24px_rgba(28,24,31,0.15)] hover:-translate-y-0.5 hover:bg-[#302733]',
         ghost: 'text-[var(--ink-soft)] hover:bg-[var(--blush)] hover:text-[var(--plum)]',
-        saffron: 'bg-[var(--saffron)] text-[var(--ink)] shadow-[0_10px_24px_rgba(224,149,60,0.2)] hover:-translate-y-0.5 hover:bg-[#eaa25a]',
+        saffron: 'bg-[var(--saffron)] text-white shadow-[0_10px_24px_rgba(224,149,60,0.2)] hover:-translate-y-0.5 hover:bg-[#eaa25a]',
       },
       size: {
         sm: 'h-9 px-4 text-xs',
